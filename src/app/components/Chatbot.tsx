@@ -1,34 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import { Send } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { ScrollArea } from '@/components/ui/scroll-area'
+import { Button } from './ui/button'
+import { Input } from './ui/input'
+import { ScrollArea } from './ui/scroll-area'
+import { SendIcon } from './ui/SendIcon'
 import Image from 'next/image'
-import { Message } from '@/types'
-import { getBotResponse } from '@/lib/utils'
+import { Message } from '../types'
+import { getBotResponse } from '../lib/utils'
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * A simple chatbot component.
- *
- * It displays a list of messages, which can be either from the user or the bot.
- * The user can type a message and send it to the bot by clicking the send button.
- * The bot will then respond with a message.
- *
- * The component is a client component, meaning it will not be rendered on the server.
- * It uses the `useState` hook to manage the state of the messages and the input message.
- * It also uses the `useEffect` hook to simulate the bot's response.
- *
- * The component is also fully accessible, meaning it can be used by people with disabilities.
- * It uses the ARIA attributes to provide information about the component to screen readers.
- *
- * The component is fully customizable, meaning you can change the styles and the layout to fit your needs.
- * It also has a lot of features, such as the ability to send messages and receive responses from the bot.
- * It also has a lot of accessibility features, such as the ability to read the messages out loud.
- */
-/******  13cc4352-84ba-44b9-855f-016f64e65d0f  *******/
 export default function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([
     { text: "Hello! I'm a simple chatbot. How can I help you today?", sender: 'bot' },
@@ -97,9 +77,10 @@ export default function Chatbot() {
             placeholder="Type your message..."
             value={inputMessage}
             onChange={(e) => setInputMessage(e.target.value)}
+            className="text-black"
           />
           <Button type="submit">
-            <Send className="h-4 w-4" />
+            <SendIcon />
             <span className="sr-only">Send</span>
           </Button>
         </form>
