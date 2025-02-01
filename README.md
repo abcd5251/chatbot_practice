@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Web3Auth (`@web3auth/no-modal`) x Web3Auth Wagmi Connector(`@web3auth/web3auth-wagmi-connector`)
 
-## Getting Started
+[![Web3Auth](https://img.shields.io/badge/Web3Auth-SDK-blue)](https://web3auth.io/docs/sdk/pnp/web/wagmi-connector)
+[![Web3Auth](https://img.shields.io/badge/Web3Auth-Community-cyan)](https://community.web3auth.io)
 
-First, run the development server:
+[Join our Community Portal](https://community.web3auth.io/) to get support and stay up to date with the latest news and updates.
+
+This example demonstrates how to use Web3Auth with RainbowKit and Wagmi Connector.
+
+## How to Use
+
+### One-Click Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FWeb3Auth%2Fweb3auth-pnp-examples%2Ftree%2Fmain%2Fweb-no-modal-sdk%2Fwagmi%2Frainbowkit-no-modal-example&project-name=w3a-rainbowkit-no-modal&repository-name=w3a-rainbowkit-no-modal)
+
+### Download Manually
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx degit Web3Auth/web3auth-pnp-examples/wagmi/rainbowkit-no-modal-example w3a-example
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install & Run:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd w3a-example
+npm install
+npm run start
+# or
+cd w3a-example
+yarn
+yarn start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Important Links
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Website](https://web3auth.io)
+- [Docs](https://web3auth.io/docs)
+- [Guides](https://web3auth.io/docs/guides)
+- [SDK / API References](https://web3auth.io/docs/sdk)
+- [Pricing](https://web3auth.io/pricing.html)
+- [Community Portal](https://community.web3auth.io)
